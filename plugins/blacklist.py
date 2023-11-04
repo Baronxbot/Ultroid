@@ -20,7 +20,7 @@ from pyUltroid.dB.blacklist_db import (
 from . import events, get_string, udB, ultroid_bot, ultroid_cmd
 
 
-@ultroid_cmd(pattern="blacklist( (.*)|$)", admins_only=True)
+@ultroid_cmd(pattern="bl( (.*)|$)", admins_only=True)
 async def af(e):
     wrd = e.pattern_match.group(1).strip()
     chat = e.chat_id
